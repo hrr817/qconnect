@@ -1,0 +1,43 @@
+/* Cover */
+.content-max {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Flexbox */
+.flx {
+  display: flex;
+}
+
+.jus-ct {
+  justify-content: center;
+}
+.al-ct {
+  align-items: center;
+}
+
+/* Margin, mr-'s/m/l' */
+.mr-s {
+  margin: 0.5em;
+}
+
+.mr-m {
+  margin: 1em;
+}
+
+.mr-l {
+  margin: 1.5em;
+}
+
+/* Padding, pd-'s/m/l' */
+.pd-s {
+  padding: 0.5em;
+}
+
+.pd-m {
+  padding: 1em;
+}
+
+.pd-l {
+  padding: 1.5em;
+}

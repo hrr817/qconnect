@@ -1,0 +1,15 @@
+html {
+  color: var(--TEXT-COLOR);
+  background-color: var(--BACKGROUND-COLOR);
+}
+
+html[data-theme="light"] {
+  --TEXT-COLOR: #000000;
+  --BACKGROUND-COLOR: #fffffd;
+}
+
+/* Dark Theme */
+html[data-theme="dark"] {
+  --TEXT-COLOR: #faf8f8;
+  --BACKGROUND-COLOR: #1f1c1c;
+}
