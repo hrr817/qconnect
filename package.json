@@ -1,5 +1,5 @@
 {
-  "name": "react-plate",
+  "name": "qconnect",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,19 +38,11 @@
   "description": "A clean boilder plate for react app.",
   "main": "index.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/hrr817/react-plate.git"
-  },
-  "keywords": [
-    "react",
-    "boilerplate",
-    "clean"
-  ],
+  "keywords": [],
   "author": "hrr817",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hrr817/react-plate/issues"
-  },
-  "homepage": "https://github.com/hrr817/react-plate#readme"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrr817/qconnect.git"
+  }
 }
