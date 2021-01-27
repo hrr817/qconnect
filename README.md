@@ -1,6 +1,10 @@
-# React App Boilderplate (Clean)
+# Qconnenct
 
-A clean boilder plate for react app.
+## A quick way for conversing
 
-- clean styling.
-- dark mode. (change html element data-theme attribute)
+### Features
+
+- Dark mode
+- Login anonymously or via Google
+- Create or enter rooms
+- Start Chatting
