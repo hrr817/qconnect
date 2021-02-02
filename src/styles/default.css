@@ -1,5 +1,6 @@
 @import "themes.css";
 @import "classes.css";
+@import "custom-styles.css";
 
 *,
 *::after,
@@ -7,7 +8,6 @@
   font-size: 16px;
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -18,7 +18,7 @@ body {
   height: 100%;
 
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   font-family: sans-serif;
 }
@@ -26,4 +26,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon svg {
+  fill: var(--TEXT-COLOR);
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.icon-big svg {
+  fill: var(--TEXT-COLOR);
+  width: 4em;
+  height: 4em;
 }

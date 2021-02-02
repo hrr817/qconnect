@@ -6,10 +6,12 @@ html {
 html[data-theme="light"] {
   --TEXT-COLOR: #000000;
   --BACKGROUND-COLOR: #fffffd;
+  --MODAL-BG-COLOR: #fffdfd;
 }
 
 /* Dark Theme */
 html[data-theme="dark"] {
   --TEXT-COLOR: #faf8f8;
   --BACKGROUND-COLOR: #1f1c1c;
+  --MODAL-BG-COLOR: #2e2e2e;
 }

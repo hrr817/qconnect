@@ -1,0 +1,78 @@
+@import "../styles/themes.css";
+
+.navbar {
+  justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-btn {
+  position: relative;
+}
+
+.user-btn::after {
+  display: block;
+  content: "";
+
+  border: 8px solid transparent;
+  border-top-color: var(--TEXT-COLOR);
+
+  position: absolute;
+  bottom: -5px;
+  transform: translateX(45%);
+}
+
+.arrow-down {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 2em;
+  height: 100%;
+  content: "";
+}
+
+.arrow-down::after,
+.arrow-down::before {
+  display: block;
+  position: absolute;
+
+  width: 1em;
+  height: 2px;
+  content: "";
+  background-color: var(--TEXT-COLOR);
+  transition: all 0.5s ease;
+}
+
+.arrow-down::after {
+  left: 2px;
+  transform: rotate(30deg);
+}
+
+.arrow-down::before {
+  right: 2px;
+  transform: rotate(-30deg);
+}
+
+.ad-active::after {
+  transform: rotate(-30deg);
+}
+
+.ad-active::before {
+  transform: rotate(30deg);
+}
+
+.drop-down-menu {
+  position: absolute;
+  top: 110%;
+  width: 60%;
+  max-width: 350px;
+  right: 5px;
+  z-index: 99;
+
+  background-color: var(--BACKGROUND-COLOR);
+  border: 1px solid #cecece;
+}

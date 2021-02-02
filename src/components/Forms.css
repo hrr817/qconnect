@@ -1,0 +1,20 @@
+@import "../styles/themes.css";
+
+.inpt {
+  margin: 0.2em 0.5em;
+  border: 1px solid #000;
+  border-radius: 0.2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fn-s {
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}

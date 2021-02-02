@@ -4,14 +4,32 @@
   height: 100vh;
 }
 
+.max {
+  width: 100%;
+  height: 100%;
+}
+
 /* Flexbox */
+.in-flx {
+  display: inline-flex;
+}
+
 .flx {
   display: flex;
+}
+
+.clm {
+  flex-direction: column;
 }
 
 .jus-ct {
   justify-content: center;
 }
+
+.spc-btw {
+  justify-content: space-between;
+}
+
 .al-ct {
   align-items: center;
 }
@@ -40,4 +58,8 @@
 
 .pd-l {
   padding: 1.5em;
+}
+
+.relative {
+  position: relative;
 }

@@ -1,0 +1,40 @@
+.messages-container {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 5em;
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background-color: #cecece;
+}
+
+.message {
+  margin-bottom: 0.5em;
+}
+
+.message > .text {
+  display: inline-block;
+  border: 1px solid #cecece;
+  border-radius: 1em;
+  padding: 0.6em 0.8em;
+  text-align: inherit;
+}
+
+.message > .from {
+  display: inline-block;
+  margin: 0.5em;
+  text-align: inherit;
+}
+
+.text-right {
+  text-align: right;
+}

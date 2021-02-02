@@ -1,0 +1,29 @@
+@import "../styles/themes.css";
+
+.room {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5em 1em;
+}
+
+.active-room {
+  background-color: #f5f5f5;
+}
+
+.royalblue {
+  color: royalblue;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.bg-green {
+  color: var(--BACKGROUND-COLOR);
+  background-color: #70e223;
+}
+
+.box-2em {
+  width: 1.4em;
+  height: 1.4em;
+}

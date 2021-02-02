@@ -1,0 +1,20 @@
+@import "../styles/themes.css";
+
+.modal-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.modal {
+  background-color: var(--MODAL-BG-COLOR);
+  border: 1px solid #cecece;
+}
+
+.modal > .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
