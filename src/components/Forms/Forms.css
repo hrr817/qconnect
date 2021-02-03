@@ -1,6 +1,7 @@
 @import "../../styles/themes.css";
 
 .inpt {
+  color: inherit;
   margin: 0.2em 0.5em;
   background-color: var(--BACKGROUND-COLOR);
   border-color: var(--BORDER-COLOR);

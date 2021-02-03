@@ -33,13 +33,13 @@ const SignInForm = () => {
           .auth()
           .signInAnonymously()
           .then(() => {
+            setLoading(false);
             app
               .auth()
               .currentUser.updateProfile({
                 displayName: name,
               })
               .then(() => {
-                setLoading(false);
                 dispatch(setModal(false));
 
                 // On success
