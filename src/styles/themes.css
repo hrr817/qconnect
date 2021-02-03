@@ -1,17 +1,25 @@
 html {
   color: var(--TEXT-COLOR);
   background-color: var(--BACKGROUND-COLOR);
+
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 html[data-theme="light"] {
   --TEXT-COLOR: #000000;
-  --BACKGROUND-COLOR: #fffffd;
-  --MODAL-BG-COLOR: #fffdfd;
+  --BACKGROUND-COLOR: #fcfcf8;
+  --MODAL-BG-COLOR: #ffffff;
+  --MSG-AUTHOR-COLOR: #1d1d1d;
+  --BORDER-COLOR: #000;
+  --ACTIVE-COLOR: #f5f5f5;
 }
 
 /* Dark Theme */
 html[data-theme="dark"] {
   --TEXT-COLOR: #faf8f8;
-  --BACKGROUND-COLOR: #1f1c1c;
+  --BACKGROUND-COLOR: #292727;
   --MODAL-BG-COLOR: #2e2e2e;
+  --MSG-AUTHOR-COLOR: #dad6d6;
+  --BORDER-COLOR: #fff;
+  --ACTIVE-COLOR: #333030;
 }

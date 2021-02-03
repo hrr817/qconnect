@@ -63,3 +63,7 @@
 .relative {
   position: relative;
 }
+
+.bg {
+  background-color: var(--BACKGROUND-COLOR);
+}

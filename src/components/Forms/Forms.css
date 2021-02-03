@@ -1,0 +1,26 @@
+@import "../../styles/themes.css";
+
+.inpt {
+  margin: 0.2em 0.5em;
+  background-color: var(--BACKGROUND-COLOR);
+  border-color: var(--BORDER-COLOR);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fn-s {
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.form-btn {
+  color: inherit;
+  background-color: var(--BACKGROUND-COLOR);
+  border-color: var(--BORDER-COLOR);
+}

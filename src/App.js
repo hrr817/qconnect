@@ -11,14 +11,13 @@ import { setUser, clearUser } from "./features/userSlice";
 import "./styles/default.css";
 
 /* Components */
-import Navbar from "./components/Navbar";
-import CreateRoomForm from "./components/CreateRoomForm";
-import RoomsList from "./components/RoomsList";
-import ChatRoom from "./components/ChatRoom";
+import Navbar from "./components/Navbar/Navbar";
+import RoomsList from "./components/containers/RoomsList/RoomsList";
+import ChatRoom from "./components/containers/ChatRoom/ChatRoom";
 
 /* firebase configurations */
 import { firebaseConfig } from "./firebaseConfig";
-import Loading from "./components/Loading";
+import Loading from "./components/Loading/Loading";
 
 const app = firebase.initializeApp(firebaseConfig);
 
@@ -94,16 +93,6 @@ function App() {
           setCurrentRoom={setCurrentRoomCallBack}
         />
       </div>
-      {/* <section>
-        {user ? (
-          <>
-            <CreateRoomForm user={user} />
-            <button onClick={() => app.auth().signOut()}>Sign Out</button>
-          </>
-        ) : (
-          <SignInForm setUser={setUserCallback} />
-        )}
-      </section> */}
     </>
   );
 }

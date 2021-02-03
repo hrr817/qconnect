@@ -1,0 +1,103 @@
+[debug] [2021-02-03T17:36:55.001Z] ----------------------------------------------------------------------
+[debug] [2021-02-03T17:36:55.003Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2021-02-03T17:36:55.003Z] CLI Version:   9.2.2
+[debug] [2021-02-03T17:36:55.003Z] Platform:      linux
+[debug] [2021-02-03T17:36:55.003Z] Node Version:  v14.15.1
+[debug] [2021-02-03T17:36:55.004Z] Time:          Wed Feb 03 2021 23:06:55 GMT+0530 (India Standard Time)
+[debug] [2021-02-03T17:36:55.004Z] ----------------------------------------------------------------------
+[debug] [2021-02-03T17:36:55.004Z] 
+[debug] [2021-02-03T17:36:55.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-03T17:36:55.008Z] > authorizing via signed-in user
+[debug] [2021-02-03T17:36:55.008Z] [iam] checking project qconnect-a946a for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-03T17:36:55.010Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/qconnect-a946a:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-03T17:36:56.807Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:36:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1395","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:36:56.809Z] > refreshing access token with scopes: []
+[debug] [2021-02-03T17:36:56.809Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-03T17:36:57.198Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 03 Feb 2021 17:36:57 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:36:57.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/qconnect-a946a [none]
+[debug] [2021-02-03T17:36:58.358Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/qconnect-a946a 200
+[debug] [2021-02-03T17:36:58.359Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/qconnect-a946a {"projectId":"qconnect-a946a","projectNumber":"778385119550","displayName":"Qconnect","name":"projects/qconnect-a946a","resources":{"hostingSite":"qconnect-a946a","storageBucket":"qconnect-a946a.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'qconnect-a946a'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-02-03T17:36:58.362Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-03T17:36:58.362Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-03T17:36:58.761Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 03 Feb 2021 17:36:58 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:36:58.800Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/qconnect-a946a:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /rooms/{document=**} {\n      allow read: if true;\n    }\n    match /rooms/{document=**} {\n      allow write, delete: if request.auth != null;\n    }\n    match /users/{document=**} {\n      allow read, write, delete: if request.auth != null;\n    }\n  }\n}"}]}}
+[debug] [2021-02-03T17:37:00.598Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2021-02-03T17:37:00.604Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-02-03T17:37:03.259Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:03.265Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/qconnect-a946a/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-02-03T17:37:03.266Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/qconnect-a946a/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-02-03T17:37:04.487Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:04.489Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/qconnect-a946a/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-02-03T17:37:04.797Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:04.799Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/qconnect-a946a/rulesets/7030e0e4-2dca-44d6-b8b1-bd86680948ed  
+ 
+[debug] [2021-02-03T17:37:05.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully 
+[debug] [2021-02-03T17:37:06.738Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[info] i  hosting[qconnect-a946a]: beginning deploy... 
+[info] i  hosting[qconnect-a946a]: found 4 files in public 
+[debug] [2021-02-03T17:37:06.752Z] > refreshing access token with scopes: []
+[debug] [2021-02-03T17:37:06.752Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-03T17:37:06.753Z] [hosting] hash cache [cHVibGlj] stored for 4 files
+[debug] [2021-02-03T17:37:06.753Z] [hosting][hash queue][FINAL] {"max":1,"min":1,"avg":1,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":3}
+[debug] [2021-02-03T17:37:07.088Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 03 Feb 2021 17:37:07 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:07.126Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions/58e8a6b8c87fa89d:populateFiles [none]
+[debug] [2021-02-03T17:37:07.126Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions/58e8a6b8c87fa89d:populateFiles {"files":{"/404.html":"a76728540a14270aa0f1178a393725edf18dac717397eeeea65b612668d0a44c","/index.html":"5d926984d39b2af330e373c4d7da48d1d0c0c5d16de8cd5c60ff6c7cb4725bd8","/manifest.json":"873382061902243fe366bdad889c8011c91fbe2933447a198a1795a47525bb9d","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec"}}
+[debug] [2021-02-03T17:37:09.027Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions/58e8a6b8c87fa89d:populateFiles 200
+[debug] [2021-02-03T17:37:09.027Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions/58e8a6b8c87fa89d:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/qconnect-a946a/versions/58e8a6b8c87fa89d/files"}
+[debug] [2021-02-03T17:37:09.028Z] [hosting][populate queue][FINAL] {"max":2276,"min":2276,"avg":2276,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2276}
+[debug] [2021-02-03T17:37:09.029Z] [hosting] uploads queued: 0
+[debug] [2021-02-03T17:37:09.030Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1612373829030}
+[info] ✔  hosting[qconnect-a946a]: file upload complete 
+[debug] [2021-02-03T17:37:09.031Z] [hosting] deploy completed after 2291ms
+[debug] [2021-02-03T17:37:09.585Z] [rules] releasing cloud.firestore with ruleset projects/qconnect-a946a/rulesets/7030e0e4-2dca-44d6-b8b1-bd86680948ed
+[debug] [2021-02-03T17:37:09.586Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-03T17:37:09.587Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-03T17:37:09.945Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 03 Feb 2021 17:37:10 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:10.003Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/qconnect-a946a/releases/cloud.firestore  
+ {"release":{"name":"projects/qconnect-a946a/releases/cloud.firestore","rulesetName":"projects/qconnect-a946a/rulesets/7030e0e4-2dca-44d6-b8b1-bd86680948ed"}}
+[debug] [2021-02-03T17:37:11.570Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:11.571Z] [rules] updated release projects/qconnect-a946a/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore 
+[debug] [2021-02-03T17:37:11.571Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "qconnect-a946a"
+    },
+    "site": "qconnect-a946a",
+    "version": "sites/qconnect-a946a/versions/58e8a6b8c87fa89d"
+  }
+]
+[info] i  hosting[qconnect-a946a]: finalizing version... 
+[debug] [2021-02-03T17:37:11.572Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/versions/58e8a6b8c87fa89d?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-02-03T17:37:14.110Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Feb 2021 17:37:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-03T17:37:14.111Z] [hosting] finalized version for qconnect-a946a: {"name":"sites/qconnect-a946a/versions/58e8a6b8c87fa89d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-02-03T17:37:02.571709Z","createUser":{"email":"Ryuu887@gmail.com"},"finalizeTime":"2021-02-03T17:37:13.607773Z","finalizeUser":{"email":"Ryuu887@gmail.com"}}
+[info] ✔  hosting[qconnect-a946a]: version finalized 
+[info] i  hosting[qconnect-a946a]: releasing new version... 
+[debug] [2021-02-03T17:37:14.114Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/qconnect-a946a/releases?version_name=sites/qconnect-a946a/versions/58e8a6b8c87fa89d  
+ {"message":null}

@@ -1,10 +1,10 @@
-@import "../styles/themes.css";
+@import "../../styles/themes.css";
 
 .protected {
   position: absolute;
   left: 0;
   z-index: 99;
-  background-color: #ffffffce;
+  background-color: #ffffffd0;
 }
 
 .input-bar {
@@ -24,14 +24,20 @@
 }
 
 .files-btn svg {
-  fill: var(--TEXT_COLOR);
+  fill: var(--BORDER-COLOR);
   height: 100%;
 }
 
 .message-input {
+  font-size: 1.1em;
   width: 100%;
+  background-color: var(--BACKGROUND-COLOR);
+  border-color: var(--BORDER-COLOR);
 }
 
 .send-btn {
   margin-left: 0.3em;
+  color: inherit;
+  background-color: var(--BACKGROUND-COLOR);
+  border-color: var(--BORDER-COLOR);
 }

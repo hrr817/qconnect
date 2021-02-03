@@ -1,4 +1,4 @@
-@import "../styles/themes.css";
+@import "../../../styles/themes.css";
 
 .room {
   cursor: pointer;
@@ -7,7 +7,7 @@
 }
 
 .active-room {
-  background-color: #f5f5f5;
+  background-color: var(--ACTIVE-COLOR);
 }
 
 .royalblue {
@@ -26,4 +26,12 @@
 .box-2em {
   width: 1.4em;
   height: 1.4em;
+}
+
+.float-bottom {
+  user-select: none;
+  /* position: absolute; */
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #cecece;
 }

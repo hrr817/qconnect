@@ -1,4 +1,4 @@
-@import "../styles/themes.css";
+@import "../../styles/themes.css";
 
 .navbar {
   justify-content: space-between;
@@ -68,11 +68,9 @@
 .drop-down-menu {
   position: absolute;
   top: 110%;
-  width: 60%;
-  max-width: 350px;
   right: 5px;
   z-index: 99;
 
-  background-color: var(--BACKGROUND-COLOR);
+  background-color: var(--MODAL-BG-COLOR);
   border: 1px solid #cecece;
 }
